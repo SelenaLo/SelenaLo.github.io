@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> GEWD DAY </title>
+    <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <style>
+
+  body{
+    background-image: url(homePic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+  .button{
+    background:transparent;
+    border: 0;
+    font-family: 'Palette Mosaic', cursive;
+    font-size: 200px;
+    text-align: center;
+    font-size: 10vw;
+}
+  .button:hover {
+    color: white;
+  }
+
+
+.center{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+  .modal{
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left:0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+
+  }
+
+.shreditz{
+  width: 15vw;
+  height: auto;
+  padding-right: 10vw;
+
+}
+.film{
+  width: 15vw;
+  height: auto;
+  padding-right: 10vw;
+}
+.mindJunk{
+  width: 15vw;
+  height: auto;
+}
+.modal-content{
+  text-align: center;
+  padding: 300px 0;
+}
+    </style>
+  </head>
+  <body>
+
+  <div class="center">
+    <button id="modalBtn" class="button">gewd day</button>
+  </div>
+<div id="simpleModal" class="modal">
+  <div class="modal-content">
+    <a href="shredits.html"><img class="shreditz"src="shreditz.jpg" alt="camcorder"></a>
+    <a href="film.html"><img class="film" src="filmRoll.jpg" alt="35mm roll"></a>
+    <a href="mindJunk.html"><img class="mindJunk"src="mindJunk.jpg" alt="brain trash"></a>
+  </div>
+</div>
+
+
+<script src="main.js"></script>
+
+
+  </body>
+</html>
